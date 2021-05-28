@@ -7,11 +7,11 @@ Hello and welcome to Uchenna's Fast.ai blog. Edit the `index.md` file to change 
 
 The objective of this project was to get as many Docker Campaign Images as possible and to classify them using various labels. 
 
-## "Holiday" - for Campaign pictures run during holidays
+** "Holiday"** - for Campaign pictures run during holidays
 
-## "Dockers Campaign" - For Campaign pictures that had the dockers logo on it
+** "Dockers Campaign"** - For Campaign pictures that had the dockers logo on it
 
-## "Dockers" - This keyword clearly wasn't very descriptive as it picked lots of images of ships in docks.
+**"Dockers"** - This keyword clearly wasn't very descriptive as it picked lots of images of ships in docks.
 
 # Code
 
@@ -96,7 +96,7 @@ if not path.exists():
         download_images(dest, urls=results.attrgot('contentUrl'))
         
         
-## Chaecking if our folder has images in it:
+## Checking if our folder has images in it:
 
 fns = get_image_files(path)
 
