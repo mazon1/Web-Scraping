@@ -6,8 +6,11 @@ Hello and welcome to Uchenna's Fast.ai blog. Edit the `index.md` file to change 
 
 
 The objective of this project was to get as many Docker Campaign Images as possible and to classify them using various labels. 
+
 "Holiday" - for Campaign pictures run during holidays
+
 "Dockers Campaign" - For Campaign pictures that had the dockers logo on it
+
 "Dockers" - This keyword clearly wasn't very descriptive as it picked lots of images of ships in docks.
 
 Code
@@ -16,23 +19,31 @@ Code
 #Install Fastbook - this requires access to your google drive
 
 !pip install -Uqq fastbook
+
 import fastbook
+
 fastbook.setup_book()
 
 #Import Fastbook Libraries
 
 from fastbook import *
+
 from fastai.vision.widgets import *
 
 To download images with Bing Image Search, You have 2 options:
+
 1. Sign up at Microsoft Azure for a free account. You will be given a key, which you can copy and enter in a cell as follows (replacing 'XXX' with your key and executing it):
 
 # key = os.environ.get('AZURE_SEARCH_KEY', 'your API Key')
 
 Once you've set key, you can use search_images_bing function.
+
 # search_images_bing
+
 # results = search_images_bing(key, 'grizzly bear')
+
 # ims = results.attrgot('content_url')
+
 # len(ims)
 
 2. You can install the Bing Image Downloader. I chose this option because it was a lot easier to deal with than searching for API keys. Note that the setback is that the data may not be as recent as a live search - but since the data i required for this project was mostly historical - this was not an issue.
