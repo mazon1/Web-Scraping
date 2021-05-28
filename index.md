@@ -2,9 +2,8 @@ Hello and welcome to Uchenna's Fast.ai blog. Edit the `index.md` file to change 
 
 ![Image of fast.ai logo](images/logo.png)
 
-## Scraping Images from Marketing Campaign Images from Bing
+## Scraping Marketing Campaign Images from Bing
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
 
 The objective of this project was to get as many Docker Campaign Images as possible and to classify them using various labels. 
 "Holiday" - for Campaign pictures run during holidays
@@ -12,6 +11,8 @@ The objective of this project was to get as many Docker Campaign Images as possi
 "Dockers" - This keyword clearly wasn't very descriptive as it picked lots of images of ships in docks.
 
 Code
+
+
 #Install Fastbook - this requires access to your google drive
 
 !pip install -Uqq fastbook
@@ -82,6 +83,6 @@ failed.map(Path.unlink);
 ...and that's all she wrote.
 
 References
-Code resource is from Jeremy Howard's Fast.ai Course - Deep Learning for Coders with Fastai and Pytorch.
+Code resource is from Jeremy Howard's Fast.ai Course -[link to fast.ai](https://www.fast.ai) - Deep Learning for Coders with Fastai and Pytorch.
 Note that you can clean the images further using the codes in his notebook. Since the intention of this project was to scrape images and classify them, my job here is done. Happy Learning.
 
