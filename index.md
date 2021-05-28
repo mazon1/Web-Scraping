@@ -34,24 +34,25 @@ To download images with Bing Image Search, You have 2 options:
 
 1. Sign up at Microsoft Azure for a free account. You will be given a key, which you can copy and enter in a cell as follows (replacing 'XXX' with your key and executing it):
 
-# key = os.environ.get('AZURE_SEARCH_KEY', 'your API Key')
+#key = os.environ.get('AZURE_SEARCH_KEY', 'your API Key')
 
 Once you've set key, you can use search_images_bing function.
 
-# search_images_bing
+#search_images_bing
 
-# results = search_images_bing(key, 'grizzly bear')
+#results = search_images_bing(key, 'grizzly bear')
 
-# ims = results.attrgot('content_url')
+#ims = results.attrgot('content_url')
 
-# len(ims)
+#len(ims)
 
 2. You can install the Bing Image Downloader. I chose this option because it was a lot easier to deal with than searching for API keys. Note that the setback is that the data may not be as recent as a live search - but since the data i required for this project was mostly historical - this was not an issue.
 
 pip install bing-image-downloader
 from bing_image_downloader import downloader 
 
-# forced limit to 150 images 
+#forced limit to 150 images 
+
 for q in ["dockers campaign", "dockers", "holiday"]: 
   downloader.download(q, limit=150, output_dir='dockers', adult_filter_off=True, force_replace=False, timeout=5)
 
@@ -59,7 +60,7 @@ for q in ["dockers campaign", "dockers", "holiday"]:
 #To view an Image from the results, copy a link from the search results above
 ims = ['https://howtobearedhead.com/wp-content/uploads/2014/12/how_to_be_A-redhead_kids_christmas.jpg']
 
-# Note that this file has to be renamed if you change the link
+#Note that this file has to be renamed if you change the link
 dest = 'image.jpg'
 download_url(ims[0], dest)
 
