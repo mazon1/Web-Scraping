@@ -2,7 +2,7 @@ Hello and welcome to Uchenna's Fast.ai blog. Edit the `index.md` file to change 
 
 ![Image of fast.ai logo](images/logo.png)
 
-## Scraping Marketing Campaign Images from Bing
+# Scraping Marketing Campaign Images from Bing
 
 
 The objective of this project was to get as many Docker Campaign Images as possible and to classify them using various labels. 
