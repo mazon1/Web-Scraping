@@ -121,4 +121,3 @@ Code resource is from Jeremy Howard's Fast.ai Course -[link to fast.ai](https://
 Note that you can clean the images further using the codes in his notebook. Since the intention of this project was to scrape images and classify them, my job here is done. 
 
 Happy Learning.
-
